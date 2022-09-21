@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        head{
-            display: contents;
-        }
-        h1{
-        font-size: 35px;
-        width: 50%;
-        font-weight: 600;
-        text-align: center;
-        transition: all 0.6s cubic-bezier(0.68,-0.55,0.265, 1.55);
-        
-        
-        }
-        body{
-        display: grid;
-        height: 100%;
-        width: 100%;
-        place-items: center;
-        background: -webkit-linear-gradient(left,#a45b,#fa4299);
-        max-width: 390px;
-        padding: 30px;
-        box-shadow: 0px 0px 0px rgba(0,0,0.1);
-        transition: all 0.6s cubic-bezier(0.68,-0.55,0.265, 1.55);
-        
-        }
-        </style>
-    <head>...</head>
     <body>
+        <div class="awal">
         <img src="ikmi.jfif" width="100%">
         <h1 align="center">Formulir Pendaftaran Mahasiswa Baru</h1>
         <h3>Petunjuk Pengisian:</h3>
+        <link rel="stylesheet" type="text/css" href="style.css"
         <ol>
             <li>Isilah data dengan cermat, teliti dan benar</li>
             <li>Isilah dengan huruf balok</li>
             <li>Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara pada ijazah</li>
         </ol>
+        </div>
+        <div class="wrapper">
         <form method="post" action="#">
             <fieldset>
                 <table>
@@ -259,8 +236,9 @@
                         <th align="left" valign="top">Asal SMA/SMK/Perguruan Tinggi</th>
                         <td valign="top">:</td>
                         <td valign="top"><input type="text" name="asal_sekolah" maxlength="14"></td>
-                    </tr>
+                    </tr></div>
                     <tr>
+                        <div class="selectionn">
                         <th></th>
                         <th align="left">Status Sekolah/Perguruan Tinggi</th>
                         <td valign="top">:</td>
@@ -291,11 +269,12 @@
                         <td>:</td>
                         <td><input type="date" name="tgl_lulus"></td>
                     </tr>
-                </tbody></table>
+                </tbody></table></div>
             </fieldset>
             <br>
             <table>
                 <tbody><tr>
+                    <div class="akhir">
                     <td>Ttd.</td>
                 </tr>
                 <tr>
@@ -310,7 +289,7 @@
             </tbody></table>
             <br>
             <button type="button" onclick="document.location.href = '../'">Kembali</button>
-            <button type="submit">Kirim</button>
+            <button type="submit">Kirim</button></body></div>
         </form>
     </body>
 </html>
